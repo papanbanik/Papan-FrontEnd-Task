@@ -1,10 +1,21 @@
 @import "tailwindcss";
-
+.container{
+  text-align: center;
+  padding: 5px;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
-
+.btn{
+  @apply border border-gray-100 bg-[#FAB326] hover:bg-[#8b6a29] outline-0 rounded-full px-5 py-1 text-white;
+}
+.navbar__link{
+  transition: all 0.2s;
+}
+.navbar__link:hover{
+  color: #FAB326;
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
