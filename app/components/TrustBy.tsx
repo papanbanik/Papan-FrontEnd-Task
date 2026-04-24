@@ -1,5 +1,8 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
+import  {motion} from 'framer-motion';
+
 const TrustBy = () => {
      const partners=[
         {name : "Casa", 
@@ -22,7 +25,12 @@ const TrustBy = () => {
         },
     ]
   return (
-  <div className="max-sm:pt-20 max-sm:mt-0 sm:pt-35 flex max-sm:flex-col items-center justify-center text-center sm:text-left sm:pl-8 gap-6">
+  <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1}}
+          transition={{ duration: 3, ease: "easeOut" }}
+          viewport={{ once: true }}
+         className="max-sm:pt-35 max-sm:mt-0 sm:pt-55 flex max-sm:flex-col items-center justify-center text-center sm:text-left sm:pl-8 gap-6 mb-5">
   <div className='flex flex-col gap-1'>
     <h3 className="text-2xl font-semibold text-gray-800">
       Trusted by
@@ -44,7 +52,7 @@ const TrustBy = () => {
         </div>
       ))}
   </div>
-</div>
+</motion.div>
   )
 }
 export default TrustBy

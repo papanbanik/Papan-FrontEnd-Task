@@ -1,7 +1,7 @@
 import Image from "next/image";
 const Offer = () => {
   return (
-    <div className="w-full px-4 md:px-12 py-15">
+    <div id="offer" className="w-full px-4 md:px-12 py-15">
       <div className="flex md:hidden gap-4 overflow-x-auto pb-4">
         <img
           src="/Offer-image/image-1.png"

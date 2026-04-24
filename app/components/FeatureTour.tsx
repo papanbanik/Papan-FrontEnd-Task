@@ -1,5 +1,5 @@
 "use client";
-
+import  {motion} from 'framer-motion';
 import Image from "next/image";
 import { MapPin } from "lucide-react";
 
@@ -20,10 +20,14 @@ const destinations = [
     location: "Manchester, England",
   },
 ];
-
 export default function FeatureTour() {
   return (
-    <section className="w-full py-0 px-4 md:px-12 bg-white">  
+    <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1}}
+          transition={{ duration: 3, ease: "easeOut" }}
+          viewport={{ once: true }}
+     id="tour" className="w-full py-0 px-4 md:px-12 bg-white">  
       <div className="mb-10">
         <h2 className="text-3xl md:text-4xl font-bold">
           Our Featured Tours
@@ -92,6 +96,6 @@ export default function FeatureTour() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -1,9 +1,9 @@
 "use client";
-
 import {useState} from "react";
 import {FaSearch, FaMapMarkerAlt, FaUser} from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";
 import {BsSearch} from 'react-icons/bs'
+import  {motion} from 'framer-motion';
 
 export default function HeroCard() {
   const [location, setLocation] = useState("Dhaka, BD");
@@ -12,8 +12,13 @@ export default function HeroCard() {
   const [guests, setGuests] = useState("2 adults, 2 children");
 
   return (
-    <div className="w-full max-w-md sm:max-w-5xl mx-auto bg-white rounded-2xl
-         shadow-lg p-4 md:p-6 relative z-50 max-sm:mt-30 sm:mt-32">    
+    <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 2, ease: "easeOut" }}
+          viewport={{ once: true }}
+     className="w-full max-w-md sm:max-w-5xl mx-auto bg-white rounded-2xl
+               shadow-lg p-4 md:p-6 relative z-50 max-sm:mt-30 sm:mt-32">    
       <div className="flex items-center gap-4 mb-6 pl-3">
         <button className="text-gray-500 font-medium flex gap-1">  
         <img src="/hero-card-logo-1.png" alt="Tours" className="w-5 h-5"/>
@@ -73,6 +78,6 @@ export default function HeroCard() {
        className="w-[120px] pl-9 pr-3 py-2 rounded-full text-white bg-[#0640C3] border text-sm outline-none focus:ring-2 placeholder:text-white focus:ring-blue-500"/>
        </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
-
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import  {motion} from 'framer-motion';
 
 const destinations = [
   { name: "Venice", image: "/destination-image/image-1.png" },
@@ -12,10 +12,14 @@ const destinations = [
   { name: "Ottawa", image: "/destination-image/image-5.png" },
   { name: "Paris", image: "/destination-image/image-6.png" },
 ];
-
 export default function FeatureTour() {
   return (
-    <section className="w-full py-12 px-4 md:px-10 bg-white">
+    <motion.section 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1}}
+          transition={{ duration: 3, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="w-full py-12 px-4 md:px-10 bg-white">
       <div className="mb-8">
         <h2 className="text-3xl md:text-4xl font-bold">
           Popular Destinations
@@ -81,6 +85,6 @@ export default function FeatureTour() {
           </button>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -1,11 +1,17 @@
+"use client"
 import Image from "next/image";
 import Navbar from "./Navbar";
 import HeroCard from "./HeroCard";
-
+import {motion} from 'framer-motion'
 const Hero = () => {
   return (
-<div className="relative max-sm:h-[85vh]  md:h-[50vh] lg:h-[50vh] w-full ">
+<div id="hero" className="relative max-sm:h-[70vh]  md:h-[50vh] lg:h-[50vh] w-full ">
       <div className="absolute inset-0 -z-10">
+        <motion.div
+         initial={{ opacity: 0 }}
+         animate={{ opacity: 1 }}
+         transition={{ duration: 2 }}
+         className="absolute inset-0 -z-10">
         <Image
           src="/Background.png"
           alt="hero"
@@ -13,6 +19,7 @@ const Hero = () => {
           priority
           sizes="100vw"
           className="object-cover"/>
+         </motion.div> 
       </div>
    <div className="z-50"><Navbar/></div>
    <div className="flex flex-col items-center justify-center text-center text-white flex-1 px-4 sm:pt-5">
@@ -20,8 +27,16 @@ const Hero = () => {
           <Image src="/earth-logo.png" width={20} height={20} alt="earth" />
           <span>Explore the world</span>
         </div>
-        <h2 className="text-2xl md:text-5xl font mb-4 max-sm:mt-">Your Gateway to Extraordinary Adventures</h2>
-        <p className="text-sm md:text-base max-w-xl">Pack your bags and let Travila redefine your travel experience.</p>
+        <motion.h2 
+        initial = {{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:2}}
+        className="text-2xl md:text-5xl font mb-4 max-sm:mt-">Your Gateway to Extraordinary Adventures</motion.h2>
+        <motion.p
+        initial = {{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:2}}
+        className="text-sm md:text-base max-w-xl">Pack your bags and let Travila redefine your travel experience.</motion.p>
      </div>
      <div className="relative z-50 -mt-16 px-4"><HeroCard/></div>
     </div>
