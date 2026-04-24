@@ -1,6 +1,5 @@
 **TripBooking.ai
-TripBooking.ai is a modern, AI-powered travel marketplace designed to simplify the discovery and booking of global adventures. 
-It offers a seamless experience for searching hotels and tours, powered by real-time deal scanning and secure payment integration.
+TripBooking.ai is a modern, AI-powered travel site designed to simplify the discovery and booking of global adventures. It offers a seamless experience for searching hotels and tours and booking accordingly.
 
 **Developer
 Name: Papan Banik
@@ -38,19 +37,18 @@ Styling: Tailwind CSS
 
 **Setup Instructions
 
-1️⃣ Clone the Repository
+1. Clone the Repository
 
 git clone https://github.com/your-username/tripbooking-ai.git
 cd tripbooking-ai
 
-2️⃣ Install Dependencies
+2. Install Dependencies
 Make sure Node.js is installed, then run:
-
 npm install
-3️⃣ Environment Configuration
 
-4️⃣ Run Development Server
+3. Run Development Server
 npm run dev
 
 Visit:
-👉 http://localhost:3000
+👉 http://localhost:3000 
+# make sure port
