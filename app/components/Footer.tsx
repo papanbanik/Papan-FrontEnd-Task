@@ -14,10 +14,8 @@ const Footer = () => {
     <footer className="w-full bg-[#0042cc] text-white pt-10 pb-8 font-sans">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* MAIN GRID */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-16">
 
-          {/* BRAND */}
           <div className="space-y-4 flex flex-col">
             <Image
               src="/navbar-logo.png"
@@ -41,10 +39,8 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* COMPANY + SERVICES (MOBILE 2 COL) */}
           <div className="grid grid-cols-2 sm:pl-15 lg:contents gap-8 col-span-2">
 
-            {/* COMPANY */}
             <div>
               <h3 className="text-lg font-semibold mb-6">Company</h3>
               <ul className="space-y-3 text-sm text-blue-100">
@@ -56,7 +52,6 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* SERVICES */}
             <div>
               <h3 className="text-lg font-semibold mb-6">Services</h3>
               <ul className="space-y-3 text-sm text-blue-100">
@@ -70,13 +65,10 @@ const Footer = () => {
 
           </div>
 
-          {/* NEWSLETTER + PAYMENTS */}
           <div className="space-y-8">
 
-            {/* NEWSLETTER */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
-
               <form className="relative flex items-center">
                 <input
                   type="email"
@@ -100,8 +92,7 @@ const Footer = () => {
                 {payments.map((p) => (
                   <div
                     key={p.name}
-                    className="bg-gray-200 p-2 rounded-md w-12 h-8 flex items-center justify-center"
-                  >
+                    className="bg-gray-200 p-2 rounded-md w-12 h-8 flex items-center justify-center>
                     <Image
                       src={p.img}
                       alt={p.name}
@@ -117,7 +108,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* BOTTOM BAR */}
         <div className="border-t border-blue-400/30 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-blue-200">
           <p>© 2024 Travila Inc. All rights reserved.</p>
 
