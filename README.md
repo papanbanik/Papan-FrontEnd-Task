@@ -37,7 +37,9 @@ Frontend: React / Next.js
 Styling: Tailwind CSS
 
 **Setup Instructions
+
 1️⃣ Clone the Repository
+
 git clone https://github.com/your-username/tripbooking-ai.git
 cd tripbooking-ai
 
