@@ -7,29 +7,20 @@ Role: Full Stack Developer
 Location: Dhaka, Bangladesh
 
 **Features
+- Fast and Modern User Interface
+- Fully Responsive System
 - Popular Destinations Gallery
-- Fully Responsive Design
 - Dynamic Tour Listings
 - Special Promotional Offers
 - Multiple Payment Integration
-- Complete Navigation System
-- Fast & Modern UI
+
  
 **Supports multiple global payment methods:
-Stripe
-PayPal
-Payoneer
-VISA
-Cash App
-Bitcoin
-Skrill
+- Stripe
+- PayPal
+- VISA
+- Skrill
 
-**Full Navigation System
-Header & Footer with:
-About Us
-Blog
-Careers
-Newsletter subscription feature
 
 ** Tech Stack
 Frontend: React / Next.js
@@ -39,14 +30,18 @@ Styling: Tailwind CSS
 
 1. Clone the Repository
 
-git clone https://github.com/your-username/tripbooking-ai.git
-cd tripbooking-ai
+git clone: https://github.com/papanbanik/Papan-FrontEnd-Task.git
+
+cd Papan-FrontEnd-Task
 
 2. Install Dependencies
+
 Make sure Node.js is installed, then run:
+
 npm install
 
 3. Run Development Server
+
 npm run dev
 
 Visit:

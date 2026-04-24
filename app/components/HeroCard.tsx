@@ -12,8 +12,8 @@ export default function HeroCard() {
   const [guests, setGuests] = useState("2 adults, 2 children");
 
   return (
-    <div className="w-full max-w-md sm:max-w-5xl mx-auto bg-white rounded-2xl shadow-lg p-4 md:p-6 relative z-50 max-sm:mt-30 sm:mt-32">
-      
+    <div className="w-full max-w-md sm:max-w-5xl mx-auto bg-white rounded-2xl
+         shadow-lg p-4 md:p-6 relative z-50 max-sm:mt-30 sm:mt-32">    
       <div className="flex items-center gap-4 mb-6 pl-3">
         <button className="text-gray-500 font-medium flex gap-1">  
         <img src="/hero-card-logo-1.png" alt="Tours" className="w-5 h-5"/>
@@ -23,9 +23,7 @@ export default function HeroCard() {
           Hotels
         </button>
       </div>
-
-      <div className="flex flex-col md:flex-row items-center gap-4 border rounded-xl p-4">
-        
+      <div className="flex flex-col md:flex-row items-center gap-4 border rounded-xl p-4">  
         <div className="flex items-center gap-3 flex-1">
           <FaMapMarkerAlt className="text-gray-400" />
           <div>
@@ -40,7 +38,6 @@ export default function HeroCard() {
             </select>
           </div>
         </div>
-
       <div className="hidden md:block w-px h-10 bg-gray-200"></div>
         <div className="flex items-center gap-3 flex-1">
           <MdDateRange className="text-gray-400" />
@@ -53,7 +50,6 @@ export default function HeroCard() {
               className="outline-none font-medium"/>
           </div>
         </div>
-
       <div className="hidden md:block w-px h-10 bg-gray-200"></div>  
         <div className="flex items-center gap-3 flex-1">
           <FaUser className="text-gray-400" />
@@ -69,7 +65,6 @@ export default function HeroCard() {
             </select>
           </div>
         </div>
-
     <div className="relative">
       <BsSearch className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
        <input
@@ -77,7 +72,6 @@ export default function HeroCard() {
        placeholder="Search"
        className="w-[120px] pl-9 pr-3 py-2 rounded-full text-white bg-[#0640C3] border text-sm outline-none focus:ring-2 placeholder:text-white focus:ring-blue-500"/>
        </div>
-        
       </div>
     </div>
   );

@@ -3,12 +3,10 @@ import Image from 'next/image'
  const Payment = () => {
   return (
     <div>
-
-        <img
+      <img
          src='/payment-logo/section.png'
          alt='payment-logo'
-         className='mb-5 w-6xl'
-         />
+         className='mb-5 w-6xl'/>
     </div>
   )
 }

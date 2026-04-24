@@ -15,7 +15,6 @@ const Navbar = () => {
           alt='logo'
           className='cursor-pointer block '/>
           </div>
-    
       <div className="max-sm:hidden w-full pr-5 py-0 flex justify-between items-center text-white shadow-sm max-sm:pl-20">    
         <Image
           src='/navbar-logo.png'
@@ -42,19 +41,17 @@ const Navbar = () => {
        <button className='btn cursor-pointer'>Sign In</button>
      </div>
     </div>
-
     <div className="flex justify-end sm:hidden -mt-11 pr-5 text-white cursor-pointer">
       <TfiAlignJustify
       onClick={()=>setMenu(true)}/>  
     </div>     
-
-    {menu && ( 
-    <div className="fixed top-0 right-0 h-screen w-64
+     {menu && ( 
+     <div className="fixed top-0 right-0 h-screen w-64
      bg-white z-[999] flex flex-col text-black">
-    <div className="flex justify-end p-4">
-      <span className="text-2xl cursor-pointer text-black"
+     <div className="flex justify-end p-4">
+           <span className="text-2xl cursor-pointer text-black"
             onClick={()=>setMenu(false)}>✕</span>
-    </div>
+      </div>
   <div className="flex flex-col gap-5 px-6 mt-4 text-black">
     <a className="cursor-pointer hover:text-[#FAB326] transition duration-400">Home</a>
     <a className="cursor-pointer hover:text-[#FAB326] transition duration-400">Tours</a>
@@ -63,18 +60,15 @@ const Navbar = () => {
     <a className="cursor-pointer hover:text-[#FAB326] transition duration-400 ">About</a>
     <a className="cursor-pointer hover:text-[#FAB326] transition duration-400 ">Contact</a>
   </div>
-
-  <div className="flex items-center px-6 mt-2 relative">
+   <div className="flex items-center px-6 mt-2 relative">
     <BsSearch className="absolute left-10 top-4 -translate-y-1 w-5 h-5 text-black"/>
     <input className="w-full p-2 rounded-lg left-10 placeholder: pl-11 text-xl pb-2 " placeholder="Search" />
-  </div>
-
-  <div>
+    </div>
+   <div>
     <button className="btn w-[80%] mt-5 ml-8">Sign In</button>
+    </div>
   </div>
-
- </div>)}  
-
-</div>
-)}
+  )}  
+  </div>
+ )}
 export default Navbar
