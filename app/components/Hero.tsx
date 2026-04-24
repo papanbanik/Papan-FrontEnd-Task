@@ -6,7 +6,6 @@ const Hero = () => {
   return (
 <div className="relative max-sm:h-[85vh]  md:h-[50vh] lg:h-[50vh] w-full ">
 
-      {/* ✅ Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
           src="/Background.png"
@@ -18,16 +17,14 @@ const Hero = () => {
         />
       </div>
 
-      {/* Navbar */}
       <div className="z-50">
         <Navbar />
       </div>
 
-      {/* Content */}
       <div className="flex flex-col items-center justify-center text-center text-white flex-1 px-4 sm:pt-5">
 
         <div className="bg-[#FAB326] flex items-center gap-2 rounded-full px-4 py-2 mb-4 max-sm:mt-10">
-          <Image src="/earth.png" width={20} height={20} alt="earth" />
+          <Image src="/earth-logo.png" width={20} height={20} alt="earth" />
           <span>Explore the world</span>
         </div>
 
@@ -40,7 +37,6 @@ const Hero = () => {
         </p>
       </div>
 
-      {/* Hero Card */}
       <div className="relative z-50 -mt-16 px-4">
         <HeroCard />
       </div>
