@@ -20,7 +20,7 @@ export default function FeatureTour() {
           transition={{ duration: 3, ease: "easeOut" }}
           viewport={{ once: true }}
           className="w-full py-12 px-4 md:px-10 bg-white">
-      <div className="mb-8">
+      <div id="about" className="mb-8">
         <h2 className="text-3xl md:text-4xl font-bold">
           Popular Destinations
         </h2>

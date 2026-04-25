@@ -15,7 +15,7 @@ const Navbar = () => {
           height={60}
           alt='logo'
           className='cursor-pointer block '/>
-          </div>
+        </div>
       <div className="max-sm:hidden w-full pr-5 py-0 flex justify-between items-center text-white shadow-sm max-sm:pl-20">    
         <Image
           src='/navbar-logo.png'
@@ -24,12 +24,12 @@ const Navbar = () => {
           alt='logo'
           className='cursor-pointer block '/>
         <div className='flex gap-6 pl-35 max-sm:hidden'>
-          <Link href="#hero" className='cursor-pointer text-white hover:text-[#FAB326] transition duration-200'>Home</Link>
+          <Link href="/" className='cursor-pointer text-white hover:text-[#FAB326] transition duration-200'>Home</Link>
           <Link href="#tour" className='cursor-pointer text-white hover:text-[#FAB326] transition duration-200'>Tours</Link>
           <Link href="#hotel" className='cursor-pointer text-white hover:text-[#FAB326] transition duration-200'>Hotel</Link>
-          <Link href="#offer" className='cursor-pointer text-white hover:text-[#FAB326] transition duration-200'>Blog</Link>
-          <Link href="#payment" className='cursor-pointer text-white hover:text-[#FAB326] transition duration-200'>About</Link>
-          <Link href="#footer" className='cursor-pointer text-white hover:text-[#FAB326] transition duration-200'>Contact</Link>
+          <Link href="#blog" className='cursor-pointer text-white hover:text-[#FAB326] transition duration-200'>Blog</Link>
+          <Link href="#about" className='cursor-pointer text-white hover:text-[#FAB326] transition duration-200'>About</Link>
+          <Link href="#contact" className='cursor-pointer text-white hover:text-[#FAB326] transition duration-200'>Contact</Link>
         </div>
      <div className='flex items-center gap-2 max-sm:hidden'>
        <div className="relative">
@@ -54,12 +54,12 @@ const Navbar = () => {
             onClick={()=>setMenu(false)}>✕</span>
       </div>
   <div className="flex flex-col gap-5 px-6 mt-4 text-black">
-    <a href="#hero" className="cursor-pointer hover:text-[#FAB326] transition duration-400">Home</a>
-    <a href="#tour" className="cursor-pointer hover:text-[#FAB326] transition duration-400">Tours</a>
-    <a href="#hotel" className="cursor-pointer hover:text-[#FAB326] transition duration-400">Hotel</a>
-    <a href="#payment" className="cursor-pointer hover:text-[#FAB326] transition duration-400 ">Blog</a>
-    <a href="#offer" className="cursor-pointer hover:text-[#FAB326] transition duration-400 ">About</a>
-    <a href="#footer" className="cursor-pointer hover:text-[#FAB326] transition duration-400 ">Contact</a>
+    <Link href="/" className="cursor-pointer hover:text-[#FAB326] transition duration-400">Home</Link>
+    <Link href="#tour" className="cursor-pointer hover:text-[#FAB326] transition duration-400">Tours</Link>
+    <Link href="#hotel" className="cursor-pointer hover:text-[#FAB326] transition duration-400">Hotel</Link>
+    <Link href="#blog" className="cursor-pointer hover:text-[#FAB326] transition duration-400 ">Blog</Link>
+    <Link href="#about" className="cursor-pointer hover:text-[#FAB326] transition duration-400 ">About</Link>
+    <Link href="#contact" className="cursor-pointer hover:text-[#FAB326] transition duration-400 ">Contact</Link>
   </div>
    <div className="flex items-center px-6 mt-2 relative">
     <BsSearch className="absolute left-10 top-4 -translate-y-1 w-5 h-5 text-black"/>

@@ -44,7 +44,7 @@ const Stars = ({ rating }: { rating: number }) => {
 export default function Hotels() {
   return (
     <section className="w-full py-5 px-4 md:px-12 relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-[#DDF2F7] bg-cover bg-center opacity-30" />
+      <div id="hotel" className="absolute inset-0 -z-10 bg-[#DDF2F7] bg-cover bg-center opacity-30" />
       <div className="mb-10">
         <h2 className="text-3xl md:text-4xl font-bold">
           Top Rated Hotels

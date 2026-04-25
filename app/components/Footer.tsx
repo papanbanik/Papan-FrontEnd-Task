@@ -9,7 +9,7 @@ const Footer = () => {
     { name: "Skrill", img: "/payment-logo/skrill.png" },
   ];
   return (
-    <div id="footer" className="w-full bg-[#0042cc] text-white pt-10 pb-8 font-sans">
+    <div id="contact" className="w-full bg-[#0042cc] text-white pt-10 pb-8 font-sans">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-16">
           <div className="space-y-4 flex flex-col">

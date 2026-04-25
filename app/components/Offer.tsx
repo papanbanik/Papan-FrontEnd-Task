@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ArrowRight  } from "lucide-react";
 const Offer = () => {
   return (
-    <div id="offer" className="w-full px-4 md:px-12 py-15">
+    <div id="blog" className="w-full px-4 md:px-12 py-15">
       <div className="flex md:hidden gap-4 overflow-x-auto pb-4">
         <div className="relative flex">
         <img
