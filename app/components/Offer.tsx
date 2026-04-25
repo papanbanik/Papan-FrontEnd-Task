@@ -43,7 +43,7 @@ const Offer = () => {
           alt="offer1"/>
           <h2 className="absolute top-15 left-38 text-white font-semibold text-xl">We Make Every<br/>
              Trips Special</h2>
-           <button className="absolute top-30 left-38 rounded-full px-5 py-1 bg-[#FAB326] flex item-center gap-1 text-white">View More
+           <button className="absolute top-30 left-38 rounded-full px-5 py-1 bg-[#FAB326] hover:bg-[#c99120] flex item-center gap-1 text-white">View More
            <ArrowRight className="w-4 h-4 mt-1"/></button>  
          </div> 
         <div className="relative flex">
@@ -53,7 +53,7 @@ const Offer = () => {
           alt="offer2"/>
           <p className="absolute text-semibold text-xl left-5 top-12">Limited Offer</p>
            <p className="absolute font-bold text-xl left-5 top-20">Buy 1, Get 1 Free </p>
-           <button className="absolute top-30 left-5 rounded-full px-4 py-1 bg-[#0640C3] flex item-center gap-1 text-white">View More
+           <button className="absolute top-30 left-5 rounded-full px-4 py-1 bg-[#0939a9] hover:bg-[#081c4b] flex item-center gap-1 text-white">View More
            <ArrowRight className="w-4 h-4 mt-1"/></button> 
          </div>  
          <div className="relative flex">
@@ -63,7 +63,7 @@ const Offer = () => {
           alt="offer3"/> 
           <p className="absolute text-semibold text-xl left-5 top-12 bg-white p-1">Limited Offer</p>
            <p className="absolute font-bold text-xl left-5 top-22 bg-white p-1">Buy 1, Get 1 Free </p>
-           <button className="absolute top-32 left-5 rounded-full px-4 py-1 bg-[#FAB326] flex item-center gap-1 text-white">View More
+           <button className="absolute top-32 left-5 rounded-full px-4 py-1 bg-[#FAB326] hover:bg-[#c99120] flex item-center gap-1 text-white">View More
            <ArrowRight className="w-4 h-4 mt-1"/></button> 
           </div>
       </div>
