@@ -7,6 +7,9 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+html {
+  scroll-behavior: smooth;
+}
 .btn{
   @apply border border-gray-100 bg-[#FAB326] hover:bg-[#8b6a29] outline-0 rounded-full px-5 py-1 text-white;
 }
@@ -21,6 +24,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+section {
+  scroll-margin-top: 80px;
 }
 
 @media (prefers-color-scheme: dark) {

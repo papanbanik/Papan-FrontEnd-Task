@@ -53,7 +53,7 @@ const Offer = () => {
           alt="offer2"/>
           <p className="absolute text-semibold text-xl left-5 top-12">Limited Offer</p>
            <p className="absolute font-bold text-xl left-5 top-20">Buy 1, Get 1 Free </p>
-           <button className="absolute top-30 left-5 rounded-full px-4 py-1 bg-[#0939a9] hover:bg-[#081c4b] flex item-center gap-1 text-white">View More
+           <button className="absolute top-30 left-5 rounded-full px-4 py-2 bg-[#0939a9] hover:bg-[#081c4b] flex item-center gap-1 text-white">View More
            <ArrowRight className="w-4 h-4 mt-1"/></button> 
          </div>  
          <div className="relative flex">
